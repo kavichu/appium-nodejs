@@ -9,6 +9,7 @@ const PORT = 8080;
 const app = express();
 app.get('/', function (req, res) {
   res.send('Hello world\n');
+  res.send('I am running inside a Docker container\n');
 });
 
 app.listen(PORT);
